@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohbet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <span>Your Name</span>
+            <input type="text" id="name" placeholder="Emirhan Bar...">
+            <button onclick="sohbeteBasla();"><i class="fa fa-plane"></i> Join Chat</button>
+        </div>
+        <h2>Chat</h2>
+        <ul class="messages">
+            <li class="message">
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste quis animi vitae! Labore, laborum!</p>
+                <span class="sender">Sender</span>
+                <span class="date">12:00</span>
+            </li>
+            <li class="message mine">
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum iste quis animi vitae! Labore, laborum!</p>
+                <span class="date">12:00</span>
+            </li>
+
+
+        </ul>
+        <div class="input">
+            <input type="text" id="myInput">
+            <button onclick="mesajGonder();"><i class="fa fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script>
+</body>
+</html>
